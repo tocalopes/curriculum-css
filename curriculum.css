@@ -1,0 +1,34 @@
+header{
+    grid-area: 'cabecalho';
+}
+
+main{
+    grid-area: 'conteudo-principal';
+}
+
+aside{
+    grid-area: 'conteudo-secundario';
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    max-width: 600px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+        'conteudo-secundario' 'cabecalho'
+        'contaudo-secundario' 'conteudo-principal'
+}
+
+
+.foto {
+
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
