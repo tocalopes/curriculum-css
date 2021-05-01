@@ -1,13 +1,13 @@
 header{
-    grid-area: 'cabecalho';
+    grid-area: cabecalho;
 }
 
 main{
-    grid-area: 'conteudo-principal';
+    grid-area: conteudo-principal;
 }
 
 aside{
-    grid-area: 'conteudo-secundario';
+    grid-area: conteudo-secundario;
 }
 
 body{
@@ -17,8 +17,8 @@ body{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 6fr;
     grid-template-areas:
-        'conteudo-secundario' 'cabecalho'
-        'contaudo-secundario' 'conteudo-principal'
+        'conteudo-secundario cabecalho'
+        'conteudo-secundario conteudo-principal'
 }
 
 
