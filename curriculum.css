@@ -18,8 +18,8 @@ aside{
 
 body{
     display: grid;
-    min-height: 100vh;
-    max-width: 700px;
+    max-height: 100vh;
+    max-width: 900px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 8fr;
     grid-template-areas:
@@ -64,20 +64,80 @@ header .info-basico p:nth-child(3){
 }
 
 main {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
 }
+
+main section {
+    margin-top: 20px;
+}
+
 main h2{
     color:#78a1bb;
     font-weight: bold;
     font-size: 1.5em;
+    margin: 20px 0px;
 }
 
 .topico-titulo h3{
     font-size: 1.0em;
-    font-weight: bold;
+    font-weight: bolder;
+    margin: 10px 0px;
 }
 
+.topico-titulo h4{
+    font-size: 0.9em;
+    font-weight: 100;
+    margin: 10px 0px;
+    font-style: italic;
+    color: #2f2f3a;
+}
+
+main ul{
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+main ul li{
+    font-size: 1.0em;
+}
+
+aside{
+    background-color: #2f2f3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+aside section{
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+aside section h2{
+    font-size: 1.0em;
+    text-align: center;
+    color: #78a1bb;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+aside section p, aside li{
+    color: #eff9f2;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+aside section ul{
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+aside section .contato {
+    text-align: center;
+    font-size: 0.85em;
+}
 .foto {
 
 }
