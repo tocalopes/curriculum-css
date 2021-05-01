@@ -1,3 +1,9 @@
+*{
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Monda', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 header{
     grid-area: cabecalho;
 }
@@ -13,14 +19,64 @@ aside{
 body{
     display: grid;
     min-height: 100vh;
-    max-width: 600px;
+    max-width: 700px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
     grid-template-areas:
         'conteudo-secundario cabecalho'
         'conteudo-secundario conteudo-principal'
 }
 
+header{
+    /* azul claro */
+    background-color: #78a1bb;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+header .info-basico {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+header .info-basico p {
+    margin: 10px 0px;
+    padding: 0;
+}
+
+header .info-basico p:nth-child(1){
+    margin-top: 0;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+header .info-basico p:nth-child(2){
+    margin-top: 0;
+    font-weight: bold;
+}
+
+header .info-basico p:nth-child(3){
+    margin-top: 0;
+    font-size: 0.9em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+main {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+main h2{
+    color:#78a1bb;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.topico-titulo h3{
+    font-size: 1.0em;
+    font-weight: bold;
+}
 
 .foto {
 
